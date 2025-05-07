@@ -1,0 +1,3 @@
+/Users/anyayashnova/kursovaya/matrix_lib_project/src/build/CMakeFiles/Matrix_lib_project.dir
+/Users/anyayashnova/kursovaya/matrix_lib_project/src/build/CMakeFiles/edit_cache.dir
+/Users/anyayashnova/kursovaya/matrix_lib_project/src/build/CMakeFiles/rebuild_cache.dir

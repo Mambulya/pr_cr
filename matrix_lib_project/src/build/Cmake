@@ -1,0 +1,23 @@
+CC = g++ -std=c++17 -Wall -Werror -Wextra
+SOURCE = s21_matrix_oop.cpp
+OBJECT = $(SOURCE:.cpp=.o)
+
+
+cmake_minimum_required(VERSION 4.0.2)  # Укажите минимальную версию CMake
+project(MatrixLibProject)               # Название вашего проекта
+
+# Укажите стандарт C++
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Найдите библиотеку OpenCV
+find_package(OpenCV REQUIRED)
+
+# Укажите исполняемый файл
+add_executable(MatrixLibProject try.cpp matrix_lib.cpp)
+
+# Свяжите библиотеку OpenCV с вашим проектом
+target_link_libraries(MatrixLibProject ${OpenCV_LIBS})
+
+# Включите директорию с заголовочными файлами
+include_directories(${OpenCV_INCLUDE_DIRS} ${CMAKE_CURRENT_SOURCE_DIR})
